@@ -1,7 +1,7 @@
 package com.Aryan.banking_backend.entity;
 
-import com.Aryan.banking_backend.entity.enums.TransactionStatus;
-import com.Aryan.banking_backend.entity.enums.TransactionType;
+import com.Aryan.banking_backend.entity.enums.Enum;
+import com.Aryan.banking_backend.entity.enums.Enum;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -32,14 +32,14 @@ public class Transaction {
     private Long id;
 
     @Enumerated(EnumType.STRING)
-    private TransactionType type;
+    private Enum.TransactionType type;
 
     private BigDecimal amount;
 
     private BigDecimal balanceAfter;
 
     @Enumerated(EnumType.STRING)
-    private TransactionStatus status;
+    private Enum.TransactionStatus status;
 
     private LocalDateTime createdAt;
 
