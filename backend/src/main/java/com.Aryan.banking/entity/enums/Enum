@@ -1,0 +1,24 @@
+package com.Aryan.banking_backend.entity.enums;
+
+public class Enum {
+
+    public enum Role {
+        CUSTOMER,ADMIN
+    }
+
+    public enum AccountType {
+        SAVINGS,CURRENT
+    }
+
+    public enum AccountStatus {
+        ACTIVE,FROZEN
+    }
+
+    public enum TransactionType {
+        DEPOSIT, WITHDRAW, TRANSFER_IN, TRANSFER_OUT
+    }
+
+    public enum TransactionStatus {
+        SUCCESS,FAILED
+    }
+}
