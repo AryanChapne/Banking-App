@@ -1,6 +1,6 @@
 package com.Aryan.banking_backend.entity;
 
-import com.Aryan.banking_backend.entity.enums.Role;
+import com.Aryan.banking_backend.entity.enums.Enum;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -31,7 +31,7 @@ public class User {
     private String password;
 
     @Enumerated(EnumType.STRING)
-    private Role role;
+    private Enum.Role role;
 
     private LocalDateTime createdAt;
 
